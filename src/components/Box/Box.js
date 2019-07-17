@@ -26,8 +26,10 @@ const Box = () => {
                             <Input placeholder="Password"/>
                             </Item >
                         <View > 
-                            <Button style = {{alignSelf : 'center',marginTop: 10}}>
+                            <Button style = {{alignSelf : 'center',marginTop: 10}}  rounded iconLeft>
+                            <Icon name={'ios-people'} size={27} color={'blue'} style={{ margin : 6}}/>
                             <Text>Login</Text>
+                            
                             </Button>
                         </View> 
                     </Content>

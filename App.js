@@ -8,8 +8,10 @@
 
 import React, {Fragment} from 'react';
 
-import Greeting from './src/components/Components/Greeting'
-import Box from './src/components/Components/Box'
+import Greeting from './src/components/Greeting/Greeting'
+import Box from './src/components/Box/Box'
+import Main from './src/components/Main/Main'
+//import FetchLocation from './src/components/FetchLocation/fetchLocation'
 
 import {
   SafeAreaView,
@@ -29,6 +31,11 @@ import {
   DebugInstructions,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
+
+
+// getUserLocationHandler = () => {
+//   console.log('Button Pressed')
+// }
 
 const App = () => {
   let pic = {
@@ -80,11 +87,15 @@ const App = () => {
   //     </SafeAreaView>
   //   </Fragment>
   
-  <View style={{flex: 1}}>
-          {/* <Button title = 'btn 2' /> */}
-          {/* <Button title='CLICK' /> */}
-        <Box></Box>
-      </View>
+  // <View style={{flex: 1}}> 
+  //<Main />
+  <Box /> 
+        //   {/* <Button title = 'btn 2' /> */}
+        //   {/* <Button title='CLICK' /> */}
+        // {/* <Box></Box> */}
+        // {/* <FetchLocation onGetLocation={this.getUserLocationHandler} /> */}
+       
+  // </View>
       // </View>
    );
 };
